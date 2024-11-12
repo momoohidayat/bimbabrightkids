@@ -1,0 +1,28 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+.image {
+    background-position: 50% 50%;
+}
+.circle-image {
+    border-radius: 50% !important;
+}
+
+/* 
+    Section 1 - Hero Header
+*/
+.section-1 {
+    background-image: url("../img/classmates-friends-bag-school-educationcopy.jpg");
+    
+}
+.section-1 h1 {
+    color: #F58121;
+}
+
+/* 
+    Section 2 - About
+*/
+.section-2 .thumb {
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipOPohYi9T24mXU4QJ4-95JE4J75wNTymoESqMHy=s1360-w1360-h1020");/* url("../img/happy-kids-elementary-school.jpg");*/
+}
+
