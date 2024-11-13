@@ -214,5 +214,29 @@
 
 
       </section>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBft4k-BFOnc10mmxIcA3j5wQyftLV6UCw",
+          authDomain: "bimba-brightkids.firebaseapp.com",
+          projectId: "bimba-brightkids",
+          storageBucket: "bimba-brightkids.firebasestorage.app",
+          messagingSenderId: "191763593581",
+          appId: "1:191763593581:web:b2537cd47e9110f64b8264",
+          measurementId: "G-1DT9MLE46W"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
   </body>
 </html>
