@@ -196,28 +196,26 @@
         <div class="carousel relative">
           <div class="carousel-track-container">
             <div class="flex flex-row absolute z-50 top-[2.5rem] right-0 carousel-nav rounded-3xl overflow-hidden">
-              <a href="javascript:void(0);" 
-                rel="nofollow"
+              <span
                 data-nav="prev"
-                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-prev">
+                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-prev cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left w-[24px] h-[24px] text-slate-500 mx-auto">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M15 6l-6 6l6 6" />
                 </svg>
-              </a>
-              <a href="javascript:void(0);" 
-                rel="nofollow"
+              </span>
+              <span
                 data-nav="next"
-                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-next">
+                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-next cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right w-[24px] h-[24px] text-slate-500 mx-auto">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M9 6l6 6l-6 6" />
                 </svg>
-              </a>
+              </span>
             </div>
 
             <ul class="flex flex-row flex-nowrap text-slate-700 text-left mt-10 xl:max-w-[840px] rounded-3xl overflow-hidden mx-auto carousel">
@@ -421,7 +419,7 @@
     <script>
       const carouselItems = document.querySelectorAll(".carousel-item");
       const carouselIndicatorItems = document.querySelectorAll(".carousel-indicator-item");
-      const carouselNav = document.querySelectorAll(".carousel-nav > a");
+      const carouselNav = document.querySelectorAll(".carousel-nav span");
 
       // current carousel index
       let i = 0;
