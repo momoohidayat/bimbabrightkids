@@ -28,11 +28,11 @@
     <title>Bimba BrightKids</title>
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700"  />
     
     <!-- styles -->
-    <link rel="stylesheet" href="assets/css/page.css" media="screen" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/page-dist.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" media="screen" />
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -40,463 +40,438 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          screens: {
-            'xxs': '320px',
-            // => @media (min-width: 320px) { ... }
-
-            'xs': '375px',
-            // => @media (min-width: 375px) { ... }
-
-            'sm': '640px',
-            // => @media (min-width: 640px) { ... }
-
-            'md': '768px',
-            // => @media (min-width: 768px) { ... }
-
-            'lg': '1024px',
-            // => @media (min-width: 1024px) { ... }
-
-            'xl': '1280px',
-            // => @media (min-width: 1280px) { ... }
-
-            '2xl': '1536px',
-            // => @media (min-width: 1536px) { ... }
-          },
-          flex: {
-            '50': '0 0 50%'
-          }
-        }
-      }
-    </script>
   </head>
   <body>
-      <section class="section-1 image object-cover block align-middle bg-cover bg-no-repeat	bg-[url('assets/img/classmates-friends-bag-school-educationcopy.jpg')]">
-        <div class="flex flex-col xl:min-h-[816px] lg:min-h-[673px] md:min-h-[515px] sm:min-h-[583px] xxs:min-h-[530px]">
-          <h1 class="text-center tracking-tighter font-medium leading-none text-[#F58121] xl:text-9xl lg:text-8xl md:text-6xl sm:text-7xl xs:text-6xl xxs:text-5xl mt-16 lg:mb-6 md:mb-4 sm:mb-3 xxs:mb-2">
-            <span class="xl:text-8xl lg:text-7xl md:text-5xl sm:text-6xl xs:text-5xl xxs:text-3xl tracking-[-0.07em]">Bimba</span><br />
-            <span class="text-blue-800 font-bold">Bright</span><span class="text-red-600 font-bold">Kids</span>
-          </h1>
-          <h2 class="text-center lg:text-3xl md:text-2xl sm:text-2xl xxs:text-2xl font-medium text-gray-600">
-            Learn &middot; Play &middot; Grow
-          </h2>
-        </div>
-      </section>
+    <section class="section-1 image object-cover block align-middle bg-cover bg-no-repeat	bg-hero-image">
+      <div class="flex flex-col xl:min-h-[816px] lg:min-h-[673px] md:min-h-[515px] sm:min-h-[583px] xxs:min-h-[530px]">
+        <h1 class="text-center tracking-tighter font-medium leading-none text-[#F58121] xl:text-9xl lg:text-8xl md:text-6xl sm:text-7xl xs:text-6xl xxs:text-5xl mt-16 lg:mb-6 md:mb-4 sm:mb-3 xxs:mb-2">
+          <span class="xl:text-8xl lg:text-7xl md:text-5xl sm:text-6xl xs:text-5xl xxs:text-3xl tracking-[-0.07em]">Bimba</span><br />
+          <span class="text-blue-800 font-bold">Bright</span><span class="text-red-600 font-bold">Kids</span>
+        </h1>
+        <h2 class="text-center lg:text-3xl md:text-2xl sm:text-2xl xxs:text-2xl font-medium text-gray-600">
+          Learn &middot; Play &middot; Grow
+        </h2>
+      </div>
+    </section>
 
-      <section class="section-2">
-        <div class="mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full">
-          <div class="flex sm:flex-row-reverse xxs:flex-col mt-16 mb-16 grid-cols-2">
-            <div class="flex flex-50 flex-col justify-center sm:p-8 xxs:p-0">
-              <div class="image thumb object-cover block align-middle bg-cover bg-no-repeat	circle-image mx-auto aspect-square w-full sm:max-w-[420px] xxs:max-w-[220px] 
-                bg-[url('assets/img/section-2.jpeg')]"></div>
-            </div>
-
-            <div class="flex flex-50 flex-col justify-center xs:p-8 xxs:p-6 text-gray-800">
-              <h6 class="uppercase lg:text-xl md:text-lg xxs:text-lg font-bold">
-                Little More About Us
-              </h6>
-              <h2 class="lg:text-3xl md:text-2xl xxs:text-2xl font-bold md:mt-5 xxs:mt-2">
-                Spiral &amp; Joyful Learning
-              </h2>
-              <p class="mt-5 lg:text-xl md:text-base sm:text-base xxs:text-lg">
-                Bimba Brightkids (BBK) adalah bimbingan belajar untuk anak usia dini mulai dari 3 - 6 tahun.
-              </p>
-              <p class="mt-5 lg:text-xl md:text-base sm:text-base xxs:text-lg">
-                Dengan metode <em>Spiral and Joyful Learning</em>, BBK siap mendampingi putra putri bapak/ibu hingga paham dan
-                terampil.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-3">
-        <img class="w-full aspect-auto" src="assets/img/front.jpg">
-
-        <div class="flex flex-col mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full md:p-0 sm:p-8 xs:p-8 xxs:p-6 mt-[-112px]">
-          <div class="benefit flex grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xxs:grid-cols-1 min-h-[335px] rounded-2xl overflow-hidden mb-10">
-            <div class="flex flex-col justify-center bg-blue-700 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
-              <h4 class="font-bold text-xl">
-                Fun Learning
-              </h4>
-              <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
-                Pembelajaran dengan metode fun learning menggunakan bahasa pengantar "bahasa ibu"
-              </p>
-            </div>
-            <div class="flex flex-col justify-center bg-lime-500 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
-              <h4 class="font-bold text-xl">
-                Perkembangan Anak
-              </h4>
-              <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
-                Concerns pada 4 tahap perkembangan anak (Kognitif, Sosial emosi, Bahasa & komunikasi, Motorik kasar & halus)
-              </p>
-            </div>
-            <div class="flex flex-col justify-center bg-red-600 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
-              <h4 class="font-bold text-xl">
-                Pendampingan Psikolog
-              </h4>
-              <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
-                Pendampingan psikolog untuk ananda yang membutuhkan pendampingan dan konsultasi
-              </p>
-            </div>
-            <div class="flex flex-col justify-center bg-amber-400 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
-              <h4 class="font-bold text-xl">
-                Terjangkau & Strategis
-              </h4>
-              <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
-                Harga terjangkau untuk semua kalangan dan lokasi strategis, SPP per bulan mulai dari Rp 320.000
-              </p>
-            </div>
+    <section class="section-2">
+      <div class="mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full">
+        <div class="flex sm:flex-row-reverse xxs:flex-col mt-16 mb-16 grid-cols-2">
+          <div class="flex flex-50 flex-col justify-center sm:p-8 xxs:p-0">
+            <div class="image thumb object-cover block align-middle bg-cover bg-no-repeat	circle-image mx-auto aspect-square w-full sm:max-w-[420px] xxs:max-w-[220px] 
+              bg-section-2"></div>
           </div>
 
-          <a href="https://wa.me/628111079796" target="_blank" 
-            data-event-name="click_learn_more_link"
-            class="px-10 py-5 bg-green-500 hover:bg-green-600 rounded-full mx-auto text-white font-semibold md:text-xl sm:text-lg mb-[100px] cta">
-            Pelajari Lebih Lanjut
-          </a>
+          <div class="flex flex-50 flex-col justify-center xs:p-8 xxs:p-6 text-gray-800">
+            <p class="uppercase lg:text-xl md:text-lg xxs:text-lg font-bold">
+              Little More About Us
+            </p>
+            <h2 class="lg:text-3xl md:text-2xl xxs:text-2xl font-bold md:mt-5 xxs:mt-2">
+              Spiral &amp; Joyful Learning
+            </h2>
+            <p class="mt-5 lg:text-xl md:text-base sm:text-base xxs:text-lg">
+              Bimba Brightkids (BBK) adalah bimbingan belajar untuk anak usia dini mulai dari 3 - 6 tahun.
+            </p>
+            <p class="mt-5 lg:text-xl md:text-base sm:text-base xxs:text-lg">
+              Dengan metode <em>Spiral and Joyful Learning</em>, BBK siap mendampingi putra putri bapak/ibu hingga paham dan
+              terampil.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-4 bg-gray-100">
-        <div class="flex flex-col text-center mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full min-h-[200px] px-8 xxs:px-6 py-16">
-          <h5 class="font-bold text-xl text-slate-700">Testmonials</h5>
-          <h4 class="font-bold text-4xl text-slate-700 mt-5">Parents Say About Us</h4>
+    <section class="section-3">
+      <img class="w-full h-auto aspect-auto" src="assets/img/front.webp" alt="Bimba BrightKids Front Office">
 
-          <div>
-            <div class="sm:p-8 xxs:pt-8">
-              <div class="sm:p-10 xs:p-8 xxs:p-4 bg-white rounded-3xl">
-                <p class="sm:text-2xl xxs:text-base text-left text-gray-500 mb-5">
-                  <em>Anak saya Bimba disini, Maa syaa Allah menurut saya bimba disini sangat baik dan menyenangkan untuk anak2, smpai2 anak
-                  saya tidak mau pulang kalau sekolah 😂. guru2 nya juga baik2 banget maa syaa allah..<br /><br />
-                  Semoga bimba bright kids lebih baik lg ke depannya, dan menjadi perantara yg baik untuk anak2 yg akan melanjutkan ke
-                  sekolah berikut nya.
-                  trimakasih</em>
-                </p>
+      <div class="flex flex-col mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full md:p-0 sm:p-8 xs:p-8 xxs:p-6 mt-[-112px]">
+        <div class="benefit grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xxs:grid-cols-1 min-h-[335px] rounded-2xl overflow-hidden mb-10">
+          <div class="flex flex-col justify-center bg-blue-700 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
+            <h4 class="font-bold text-xl">
+              Fun Learning
+            </h4>
+            <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
+              Pembelajaran dengan metode fun learning menggunakan bahasa pengantar "bahasa ibu"
+            </p>
+          </div>
+          <div class="flex flex-col justify-center bg-lime-500 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
+            <h4 class="font-bold text-xl">
+              Perkembangan Anak
+            </h4>
+            <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
+              Concerns pada 4 tahap perkembangan anak (Kognitif, Sosial emosi, Bahasa & komunikasi, Motorik kasar & halus)
+            </p>
+          </div>
+          <div class="flex flex-col justify-center bg-red-600 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
+            <h4 class="font-bold text-xl">
+              Pendampingan Psikolog
+            </h4>
+            <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
+              Pendampingan psikolog untuk ananda yang membutuhkan pendampingan dan konsultasi
+            </p>
+          </div>
+          <div class="flex flex-col justify-center bg-amber-400 text-white text-center sm:min-h-[300px] xxs:min-h-[240px] lg:p-5 md:p-8 xxs:p-6">
+            <h4 class="font-bold text-xl">
+              Terjangkau & Strategis
+            </h4>
+            <p class="mt-5 lg:text-base sm:text-lg xxs:text-base">
+              Harga terjangkau untuk semua kalangan dan lokasi strategis, SPP per bulan mulai dari Rp 320.000
+            </p>
+          </div>
+        </div>
 
-                <div class="flex flex-row">
-                  <div class="flex flex-col justify-center">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjWVuW2zddUHWU5zNj6tXJeB5qIkS8AAGbBrABrg9NQbTr7meyAR=w120-h120-p-rp-mo-br100" alt="" 
-                      class="sm:w-[75px] sm:h-[75px] xs:w-[54px] xs:h-[54px] xxs:w-[40px] xxs:h-[40px] aspect-square rounded-full sm:mr-5 xxs:mr-2">
-                  </div>
-                  <div class="flex flex-col justify-center text-left">
-                    <p class="lg:text-2xl md:text-xl xs:text-base xxs:text-sm font-semibold tracking-light md:leading-7 sm:leading-6 xs:leading-5 xxs:leading-4 text-blue-800 mr-5">
-                      Nurmultazimah<br />Marhamah
-                    </p>
-                    <p class="md:text-base xs:text-sm xxs:text-xs font-normal text-slate-400">Juni 2024</p>
-                  </div>
-                  <div class="flex flex-col justify-center justify-items-end ml-auto">
-                    <i class="fa fa-quote-right text-3xl text-amber-500"></i>
-                  </div>
+        <a href="https://wa.me/628111079796" target="_blank" 
+          data-event-name="click_learn_more_link"
+          class="px-10 py-5 bg-green-500 hover:bg-green-600 rounded-full mx-auto text-white font-semibold md:text-xl sm:text-lg mb-[100px] cta">
+          Pelajari Lebih Lanjut
+        </a>
+      </div>
+    </section>
+
+    <section class="section-4 bg-gray-100">
+      <div class="flex flex-col text-center mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full min-h-[200px] px-8 xxs:px-6 py-16">
+        <h5 class="font-bold text-xl text-slate-700">Testmonials</h5>
+        <h4 class="font-bold text-4xl text-slate-700 mt-5">Parents Say About Us</h4>
+
+        <div>
+          <div class="sm:p-8 xxs:pt-8">
+            <div class="sm:p-10 xs:p-8 xxs:p-4 bg-white rounded-3xl">
+              <p class="sm:text-2xl xxs:text-base text-left text-gray-500 mb-5">
+                <em>Anak saya Bimba disini, Maa syaa Allah menurut saya bimba disini sangat baik dan menyenangkan untuk anak2, smpai2 anak
+                saya tidak mau pulang kalau sekolah 😂. guru2 nya juga baik2 banget maa syaa allah..<br /><br />
+                Semoga bimba bright kids lebih baik lg ke depannya, dan menjadi perantara yg baik untuk anak2 yg akan melanjutkan ke
+                sekolah berikut nya.
+                trimakasih</em>
+              </p>
+
+              <div class="flex flex-row">
+                <div class="flex flex-col justify-center">
+                  <img src="https://lh3.googleusercontent.com/a-/ALV-UjWVuW2zddUHWU5zNj6tXJeB5qIkS8AAGbBrABrg9NQbTr7meyAR=w120-h120-p-rp-mo-br100" alt="" 
+                    class="sm:w-[75px] sm:h-[75px] xs:w-[54px] xs:h-[54px] xxs:w-[40px] xxs:h-[40px] aspect-square rounded-full sm:mr-5 xxs:mr-2">
+                </div>
+                <div class="flex flex-col justify-center text-left">
+                  <p class="lg:text-2xl md:text-xl xs:text-base xxs:text-sm font-semibold tracking-light md:leading-7 sm:leading-6 xs:leading-5 xxs:leading-4 text-blue-800 mr-5">
+                    Nurmultazimah<br />Marhamah
+                  </p>
+                  <p class="md:text-base xs:text-sm xxs:text-xs font-normal text-slate-400">Juni 2024</p>
+                </div>
+                <div class="flex flex-col justify-center justify-items-end ml-auto">
+                  <i class="fa fa-quote-right text-3xl text-amber-500"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-5 bg-green-500">
-        <div class="flex flex-col text-center mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 py-16">
-          <h4 class="font-bold text-5xl xxs:text-4xl text-white mt-5">Gratis Kelas Ujicoba</h4>
-          <p class="text-white sm:text-2xl xs:text-xl xxs:text-lg mx-auto max-w-[385px] mt-8 mb-8">
-            Daftarkan putra putri bapak/ibu sekarang juga, atau ikuti kelas ujicoba secara gratis.
-          </p>
-          <a href="https://wa.me/628111079796" target="_blank" 
-            data-event-name="click_more_info_link"
-            class="px-10 py-5 bg-amber-400 hover:bg-lime-100 rounded-full mx-auto text-slate-700 font-semibold md:text-xl sm:text-lg cta">
-            Info Lebih Lengkap
-          </a>
-        </div>
-      </section>
+    <section class="section-5 bg-green-500">
+      <div class="flex flex-col text-center mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 py-16">
+        <h4 class="font-bold text-5xl xxs:text-4xl text-white mt-5">Gratis Kelas Ujicoba</h4>
+        <p class="text-white sm:text-2xl xs:text-xl xxs:text-lg mx-auto max-w-[385px] mt-8 mb-8">
+          Daftarkan putra putri bapak/ibu sekarang juga, atau ikuti kelas ujicoba secara gratis.
+        </p>
+        <a href="https://wa.me/628111079796" target="_blank" 
+          data-event-name="click_more_info_link"
+          class="px-10 py-5 bg-amber-400 hover:bg-lime-100 rounded-full mx-auto text-slate-700 font-semibold md:text-xl sm:text-lg cta">
+          Info Lebih Lengkap
+        </a>
+      </div>
+    </section>
 
-      <section class="section-6">
-        <div class="flex flex-col mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 xxs:px-6 py-16">
-          <h4 class="font-bold text-5xl xxs:text-4xl text-slate-700 text-center">Meet Our Team</h4>
-          <h5 class="font-normal sm:text-xl text-center sm:text-lg xxs:text-base text-slate-700 mt-5 max-w-[685px] mx-auto">
-            Kami memiliki team yang berpengalaman dan siap mendampingi putra putri bapak/ibu dalam kegiatan belajar yang
-            menyenangkan.
-          </h5>
-      
-          <div class="carousel relative">
-            <div class="carousel-track-container">
-              <div class="flex flex-row absolute z-50 top-[2.5rem] right-0 carousel-nav rounded-3xl overflow-hidden">
-                <a class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-prev" data-nav="prev">
-                  <i class="fas fa-chevron-left block mx-auto"></i>
-                </a>
-                <a class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-next" data-nav="next">
-                  <i class="fas fa-chevron-right block mx-auto"></i>
-                </a>
-              </div>
+    <section class="section-6">
+      <div class="flex flex-col mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 xxs:px-6 py-16">
+        <h4 class="font-bold text-5xl xxs:text-4xl text-slate-700 text-center">Meet Our Team</h4>
+        <h5 class="font-normal text-center sm:text-lg xxs:text-base text-slate-700 mt-5 max-w-[685px] mx-auto">
+          Kami memiliki team yang berpengalaman dan siap mendampingi putra putri bapak/ibu dalam kegiatan belajar yang
+          menyenangkan.
+        </h5>
+    
+        <div class="carousel relative">
+          <div class="carousel-track-container">
+            <div class="flex flex-row absolute z-50 top-[2.5rem] right-0 carousel-nav rounded-3xl overflow-hidden">
+              <a href="javascript:void(0);" 
+                rel="nofollow"
+                data-nav="prev"
+                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-prev">
+                <i class="fas fa-chevron-left block mx-auto"></i>
+              </a>
+              <a href="javascript:void(0);" 
+                rel="nofollow"
+                data-nav="next"
+                class="flex flex-col justify-center w-[44px] h-[44px] bg-gray-100 carousel-nav-next">
+                <i class="fas fa-chevron-right block mx-auto"></i>
+              </a>
+            </div>
 
-              <ul class="flex flex-row flex-nowrap text-slate-700 text-left mt-10 xl:max-w-[840px] rounded-3xl overflow-hidden mx-auto carousel">
-                <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
-                  <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
-                    <img src="assets/img/nina.jpeg" alt="Noviana Azhar"
-                      class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
-                    <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
-                      <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Alfina Azhar S.S., M.M</h6>
-                      <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
-                        Co-Founder, Bidang Pengembangan &amp; Pendidikan
-                      </p>
-                      <p class="font-normal sm:text-base xxs:text-sm">
-                        Memiliki lebih dari 5 tahun pengalaman mengajar di berbagai institusi international school di Jakarta.
-                        Banyak berkecimpung di bidang pendidikan dan perkembangan anak. Energik, supel dan ceria membuat
-                        pembelajaran di kelas menjadi lebih interaktif.
-                      </p>
-                    </div>
+            <ul class="flex flex-row flex-nowrap text-slate-700 text-left mt-10 xl:max-w-[840px] rounded-3xl overflow-hidden mx-auto carousel">
+              <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
+                <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
+                  <img src="assets/img/nina.webp" alt="Noviana Azhar"
+                    class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
+                  <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
+                    <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Alfina Azhar S.S., M.M</h6>
+                    <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
+                      Co-Founder, Bidang Pengembangan &amp; Pendidikan
+                    </p>
+                    <p class="font-normal sm:text-base xxs:text-sm">
+                      Memiliki lebih dari 5 tahun pengalaman mengajar di berbagai institusi international school di Jakarta.
+                      Banyak berkecimpung di bidang pendidikan dan perkembangan anak. Energik, supel dan ceria membuat
+                      pembelajaran di kelas menjadi lebih interaktif.
+                    </p>
                   </div>
-                </li>
-                <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
-                  <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
-                    <img src="assets/img/zuka.jpeg" alt="Zuka Khairunnisa"
-                      class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
-                    <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
-                      <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Zuka Khairunnisa, M.Psi, Psikolog</h6>
-                      <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
-                        Co-Founder &amp; Konsultan Psikolog
-                      </p>
-                      <p class="font-normal sm:text-base xxs:text-sm">
-                        Konsultan pendidikan yang telah berpraktek selama
-                        lebih dari 8 tahun di bidang pendidikan dan perkembangan anak. 
-                        Berpengalaman menangani kasus kesulitan belajar pada anak maupun kasus psikologis lainnya.
-                      </p>
-                    </div>
+                </div>
+              </li>
+              <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
+                <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
+                  <img src="assets/img/zuka.webp" alt="Zuka Khairunnisa"
+                    class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
+                  <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
+                    <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Zuka Khairunnisa, M.Psi, Psikolog</h6>
+                    <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
+                      Co-Founder &amp; Konsultan Psikolog
+                    </p>
+                    <p class="font-normal sm:text-base xxs:text-sm">
+                      Konsultan pendidikan yang telah berpraktek selama
+                      lebih dari 8 tahun di bidang pendidikan dan perkembangan anak. 
+                      Berpengalaman menangani kasus kesulitan belajar pada anak maupun kasus psikologis lainnya.
+                    </p>
                   </div>
-                </li>
-                <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
-                  <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
-                    <img src="assets/img/novi.jpeg" alt="Noviana Azhar"
-                      class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
-                    <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
-                      <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Noviana Azhar S.E</h6>
-                      <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
-                        Co-Founder, Business Development &amp; Operasional
-                      </p>
-                      <p class="font-normal sm:text-base xxs:text-sm">
-                        Co-Founder, pengembangan bisnis dan operasional sekaligus pengajar aktif. 
-                        Banyak berkecimpung di bidang bisnis dan parenting.
-                        Aktif, inovatif, berwawasan luas, serta rutin melakukan pengembangan sistem di bidang pengajaran.
-                      </p>
-                    </div>
+                </div>
+              </li>
+              <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
+                <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
+                  <img src="assets/img/novi.webp" alt="Noviana Azhar"
+                    class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
+                  <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
+                    <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Noviana Azhar S.E</h6>
+                    <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
+                      Co-Founder, Business Development &amp; Operasional
+                    </p>
+                    <p class="font-normal sm:text-base xxs:text-sm">
+                      Co-Founder, pengembangan bisnis dan operasional sekaligus pengajar aktif. 
+                      Banyak berkecimpung di bidang bisnis dan parenting.
+                      Aktif, inovatif, berwawasan luas, serta rutin melakukan pengembangan sistem di bidang pengajaran.
+                    </p>
                   </div>
-                </li>
-                <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
-                  <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
-                    <img src="assets/img/empty-avatar.png" alt="Novi Amelia"
-                      class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
-                    <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
-                      <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Novi Amelia</h6>
-                      <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
-                        Teacher Staff
-                      </p>
-                      <p class="font-normal sm:text-base xxs:text-sm">
-                        Staf pengajar yang memiliki pengalaman mengajar di bidang serupa selama lebih dari 2 tahun. 
-                        Aktif, ceria dan menyukai anak2 membuatnya mampu membuat sistem pengajaran di kelas menjadi lebih menyenangkan.
-                      </p>
-                    </div>
+                </div>
+              </li>
+              <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
+                <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
+                  <img src="assets/img/empty-avatar.webp" alt="Novi Amelia"
+                    class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
+                  <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
+                    <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Novi Amelia</h6>
+                    <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
+                      Teacher Staff
+                    </p>
+                    <p class="font-normal sm:text-base xxs:text-sm">
+                      Staf pengajar yang memiliki pengalaman mengajar di bidang serupa selama lebih dari 2 tahun. 
+                      Aktif, ceria dan menyukai anak2 membuatnya mampu membuat sistem pengajaran di kelas menjadi lebih menyenangkan.
+                    </p>
                   </div>
-                </li>
-                <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
-                  <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
-                    <img src="assets/img/empty-avatar.png" alt="Rifda Nusya"
-                      class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
-                    <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
-                      <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Rifda Nusya</h6>
-                      <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
-                        Administration Staff
-                      </p>
-                      <p class="font-normal sm:text-base xxs:text-sm">
-                        Staf administrasi yang ramah, supel, komunikatif dan juga fast respond.
-                        Selalu siap membantu apabila bapak/ibu membutuhkan informasi apapun terkait Bimba Brightkids.
-                      </p>
-                    </div>
+                </div>
+              </li>
+              <li class="relative min-w-[100%] sm:mt-0 xxs:mt-[65px] transition-all ease-linear duration-500 carousel-item">
+                <div class="sm:flex flex-row bg-gray-100 mb-4 sm:p-8 xxs:p-6 rounded-3xl">
+                  <img src="assets/img/empty-avatar.webp" alt="Rifda Nusya"
+                    class="flex bg-gray-100 sm:w-[150px] sm:h-[150px] xxs:w-[120px] xxs:h-[120px] sm:mt-0 xxs:mt-[-80px] aspect-square rounded-full mx-auto border-white xxs:border-[10px]">
+                  <div class="flex flex-col grow justify-center sm:ml-5 sm:mt-0 xxs:mt-5">
+                    <h6 class="font-semibold text-xl sm:text-left xxs:text-center">Rifda Nusya</h6>
+                    <p class="font-medium text-blue-500 sm:text-left xxs:text-center sm:text-base xxs:text-sm mb-2">
+                      Administration Staff
+                    </p>
+                    <p class="font-normal sm:text-base xxs:text-sm">
+                      Staf administrasi yang ramah, supel, komunikatif dan juga fast respond.
+                      Selalu siap membantu apabila bapak/ibu membutuhkan informasi apapun terkait Bimba Brightkids.
+                    </p>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </li>
+            </ul>
 
-              <div class="flex flex-row justify-center carousel-indicator">
-                <i class="w-[10px] h-[10px] bg-slate-400 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="0"></i>
-                <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="1"></i>
-                <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="2"></i>
-                <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="3"></i>
-                <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="4"></i>
-              </div>
+            <div class="flex flex-row justify-center carousel-indicator">
+              <i class="w-[10px] h-[10px] bg-slate-400 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="0"></i>
+              <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="1"></i>
+              <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="2"></i>
+              <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="3"></i>
+              <i class="w-[10px] h-[10px] bg-slate-200 rounded-full mx-[2px] cursor-pointer carousel-indicator-item" data-carousel-index="4"></i>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-7 bg-slate-900">
-        <div class="flex flex-col text-left text-white mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 py-16">
-          <div class="flex flex-row mb-10">
-            <div class="flex flex-col sm:flex-50">
-              <h4 class="text-xl font-bold mb-4">Get In Touch</h4>
-              <div class="flex flex-row mb-2">
-                <i class="fas fa-map-marker-alt min-w-[30px] pt-[4px]"></i>
-                <p>
-                  <a href="https://maps.app.goo.gl/QSN91qCuDC9949eF6" target="_blank" data-event-name="click_footer_map_link" class="cta">
-                    Jl. HOS Cokroaminoto No.14-16, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154
-                  </a>
-                </p>
-              </div>
-              <div class="flex flex-row mb-2">
-                <i class="fab fa-whatsapp min-w-[30px] pt-[4px]"></i>
-                <p>
-                  <a href="https://wa.me/628111079796" target="_blank" data-event-name="click_footer_whatsapp_link" class="cta">
-                    +62 811-1079-796
-                  </a>
-                </p>
-              </div>
-              <div class="flex flex-row">
-                <i class="fab fa-instagram min-w-[30px] pt-[4px]"></i>
-                <p>
-                  <a href="https://www.instagram.com/bimbabrightkids/" target="_blank" data-event-name="click_footer_instagram_link" class="cta">
-                    @bimbabrightkids
-                  </a>
-                </p>
-              </div>
+    <section class="section-7 bg-slate-900">
+      <div class="flex flex-col text-left text-white mx-auto xl:max-w-[1140px] lg:max-w-[940px] md:max-w-[720px] xxs:w-full px-8 py-16">
+        <div class="flex flex-row mb-10">
+          <div class="flex flex-col sm:flex-50">
+            <h4 class="text-xl font-bold mb-4">Get In Touch</h4>
+            <div class="flex flex-row mb-2">
+              <i class="fas fa-map-marker-alt min-w-[30px] pt-[4px]"></i>
+              <p>
+                <a href="https://maps.app.goo.gl/QSN91qCuDC9949eF6" target="_blank" data-event-name="click_footer_map_link" class="cta">
+                  Jl. HOS Cokroaminoto No.14-16, Larangan Utara, Kec. Larangan, Kota Tangerang, Banten 15154
+                </a>
+              </p>
             </div>
-  
-            <div class="flex flex-col sm:flex-50"></div>
+            <div class="flex flex-row mb-2">
+              <i class="fab fa-whatsapp min-w-[30px] pt-[4px]"></i>
+              <p>
+                <a href="https://wa.me/628111079796" target="_blank" data-event-name="click_footer_whatsapp_link" class="cta">
+                  +62 811-1079-796
+                </a>
+              </p>
+            </div>
+            <div class="flex flex-row">
+              <i class="fab fa-instagram min-w-[30px] pt-[4px]"></i>
+              <p>
+                <a href="https://www.instagram.com/bimbabrightkids/" target="_blank" data-event-name="click_footer_instagram_link" class="cta">
+                  @bimbabrightkids
+                </a>
+              </p>
+            </div>
           </div>
 
-          <p class="text-center text-sm text-slate-400">Copyright &copy; 2024 Bimba BrightKids</p>
+          <div class="flex flex-col sm:flex-50"></div>
         </div>
-      </section>
 
-      <a href="https://wa.me/628111079796" target="_blank"
-        data-event-name="click_fab_whatsapp_link"
-        class="flex flex-col text-center justify-center item-center fixed bottom-[20px] right-[20px] w-[60px] h-[60px] rounded-full shadow-xl bg-green-500 hover:bg-green-600 cta">
-        <i class="fab fa-whatsapp text-4xl text-white block" ></i>
-      </a>
+        <p class="text-center text-sm text-slate-400">Copyright &copy; 2024 Bimba BrightKids</p>
+      </div>
+    </section>
 
-      <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-        import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    <a href="https://wa.me/628111079796" target="_blank"
+      data-event-name="click_fab_whatsapp_link"
+      aria-label="WA FAB"
+      class="flex flex-col text-center justify-center item-center fixed bottom-[20px] right-[20px] w-[60px] h-[60px] rounded-full shadow-xl bg-green-500 hover:bg-green-600 cta">
+      <i class="fab fa-whatsapp text-4xl text-white block" ></i>
+    </a>
 
-        const firebaseConfig = {
-          apiKey: "AIzaSyBft4k-BFOnc10mmxIcA3j5wQyftLV6UCw",
-          authDomain: "bimba-brightkids.firebaseapp.com",
-          projectId: "bimba-brightkids",
-          storageBucket: "bimba-brightkids.firebasestorage.app",
-          messagingSenderId: "191763593581",
-          appId: "1:191763593581:web:b2537cd47e9110f64b8264",
-          measurementId: "G-1DT9MLE46W"
-        };
+    <script type="module" defer="">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
 
-        // Log event
-        const ctas = document.querySelectorAll('.cta');
+      const firebaseConfig = {
+        apiKey: "AIzaSyBft4k-BFOnc10mmxIcA3j5wQyftLV6UCw",
+        authDomain: "bimba-brightkids.firebaseapp.com",
+        projectId: "bimba-brightkids",
+        storageBucket: "bimba-brightkids.firebasestorage.app",
+        messagingSenderId: "191763593581",
+        appId: "1:191763593581:web:b2537cd47e9110f64b8264",
+        measurementId: "G-1DT9MLE46W"
+      };
 
-        ctas.forEach((cta) => {
-          cta.addEventListener('click', (e) => {
-            let eventName = e.target.getAttribute('data-event-name');
-            if (eventName == null) {
-              eventName = e.target.parentElement.getAttribute('data-event-name');
-            }
-            console.log(eventName);
-            logEvent(analytics, eventName);
-          });
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      // Log event
+      const ctas = document.querySelectorAll('.cta');
+
+      ctas.forEach((cta) => {
+        cta.addEventListener('click', (e) => {
+          let eventName = e.target.getAttribute('data-event-name');
+          if (eventName == null) {
+            eventName = e.target.parentElement.getAttribute('data-event-name');
+          }
+          console.log(eventName);
+          logEvent(analytics, eventName);
         });
-      </script>
+      });
+    </script>
 
-      <script>
-        const carouselItems = document.querySelectorAll(".carousel-item");
-        const carouselIndicatorItems = document.querySelectorAll(".carousel-indicator-item");
-        const carouselNav = document.querySelectorAll(".carousel-nav > a");
+    <script>
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const carouselIndicatorItems = document.querySelectorAll(".carousel-indicator-item");
+      const carouselNav = document.querySelectorAll(".carousel-nav > a");
 
-        // current carousel index
-        let i = 0;
+      // current carousel index
+      let i = 0;
 
-        // Promise Sleep
-        function sleep(ms) {
-          return new Promise(resolve => setTimeout(resolve, ms));
+      // Promise Sleep
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      // Carousel Runner
+      const runCarouselAutoSlide = () => {
+        setNextItem();
+        animateCarousel();
+      };
+
+      // Carousel Pager
+      const setNextItem = () => {
+        if (i + 1 < carouselItems.length) {
+          i++;
+          return;
+        }
+  
+        i = 0;      
+      };
+
+      const setPrevItem = () => {
+        if (i <= 0) {
+          i = carouselItems.length;
         }
         
-        // Carousel Runner
-        const runCarouselAutoSlide = () => {
-          setNextItem();
-          animateCarousel();
-        };
+        i--;
+      };
 
-        // Carousel Pager
-        const setNextItem = () => {
-          if (i + 1 < carouselItems.length) {
-            i++;
-            return;
+      var carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+
+      // Carousel Nav
+      carouselNav.forEach((nav) => {
+        nav.addEventListener('click', (e) => {
+          e.preventDefault();
+          clearInterval(carouselTimer);
+
+          let navType = e.target.getAttribute('data-nav');
+          if (navType == null) {
+            navType = e.target.parentElement.getAttribute('data-nav');
           }
-    
-          i = 0;      
-        };
 
-        const setPrevItem = () => {
-          if (i <= 0) {
-            i = carouselItems.length;
+          if (navType == 'next') {
+            setNextItem();
+          } else {
+            setPrevItem();
           }
           
-          i--;
-        };
+          animateCarousel();
+          carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+        });
+      });
 
-        var carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+      // Carousel Indicator
+      carouselIndicatorItems.forEach((indicatorItem) => {
+        indicatorItem.addEventListener('click', (e) => {
+          e.preventDefault();
+          clearInterval(carouselTimer);
 
-        // Carousel Nav
-        carouselNav.forEach((nav) => {
-          nav.addEventListener('click', (e) => {
-            e.preventDefault();
-            clearInterval(carouselTimer);
+          let index = Number(e.target.getAttribute('data-carousel-index'));
+          i = index;
 
-            let navType = e.target.getAttribute('data-nav');
-            if (navType == null) {
-              navType = e.target.parentElement.getAttribute('data-nav');
-            }
+          animateCarousel();
+          carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+        });
+      });
 
-            if (navType == 'next') {
-              setNextItem();
-            } else {
-              setPrevItem();
-            }
-            
-            animateCarousel();
-            carouselTimer = setInterval(runCarouselAutoSlide, 5000);
-          });
+      // Carousel Animation
+      const animateCarousel = () => {
+        Array.from(carouselItems).forEach((item, index) => {
+          if (i < carouselItems.length) {
+            item.style.transform = `translateX(-${i * 100}%)`;
+          }
         });
 
-        // Carousel Indicator
-        carouselIndicatorItems.forEach((indicatorItem) => {
-          indicatorItem.addEventListener('click', (e) => {
-            e.preventDefault();
-            clearInterval(carouselTimer);
-
-            let index = Number(e.target.getAttribute('data-carousel-index'));
-            i = index;
-
-            animateCarousel();
-            carouselTimer = setInterval(runCarouselAutoSlide, 5000);
-          });
+        Array.from(carouselIndicatorItems).forEach((item, index) => {
+          if (index == i) {
+            item.classList.replace('bg-slate-200', 'bg-slate-400');
+          } else {
+            item.classList.replace('bg-slate-400', 'bg-slate-200');
+          }
         });
-
-        // Carousel Animation
-        const animateCarousel = () => {
-          Array.from(carouselItems).forEach((item, index) => {
-            if (i < carouselItems.length) {
-              item.style.transform = `translateX(-${i * 100}%)`;
-            }
-          });
-
-          Array.from(carouselIndicatorItems).forEach((item, index) => {
-            if (index == i) {
-              item.classList.replace('bg-slate-200', 'bg-slate-400');
-            } else {
-              item.classList.replace('bg-slate-400', 'bg-slate-200');
-            }
-          });
-        };
-      </script>
+      };
+    </script>
   </body>
 </html>
