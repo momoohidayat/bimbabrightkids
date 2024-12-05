@@ -77,28 +77,27 @@ body {
 .animate-ping-small {
   animation: ping-small 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .animate-slide-up-scale {
-    animation: slide-up-scale linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-  }
 
-  .animate-scale-in {
-    animation: scale-in linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 10%;
-  }
+.animate-slide-up-scale {
+  animation: slide-up-scale linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
 
-  .animate-fade-in {
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
+.animate-scale-in {
+  animation: scale-in linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
 
-  .animate-slide-up-fade-in {
-    animation: slide-up-fade-in linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-  }
+.animate-fade-in {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.animate-slide-up-fade-in {
+  animation: slide-up-fade-in linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
