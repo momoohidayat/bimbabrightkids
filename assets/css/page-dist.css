@@ -2977,7 +2977,7 @@ body {
 
 .animate-slide-up-scale.animate {
   scale: 0;
-  transform: translateX(-400px);
+  transform: translateX(-120px);
   transition: all 500ms;
 }
 
@@ -3008,7 +3008,7 @@ body {
 
 .animate-slide-left-fade-in.animate {
   opacity: 0;
-  transform: translateX(400px);
+  transform: translateX(120px);
   transition: all 500ms;
 }
 
@@ -3019,7 +3019,7 @@ body {
 
 .animate-slide-right-fade-in.animate {
   opacity: 0;
-  transform: translateX(-400px);
+  transform: translateX(-120px);
   transition: all 500ms;
 }
 
