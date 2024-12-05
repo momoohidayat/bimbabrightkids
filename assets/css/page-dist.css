@@ -821,6 +821,10 @@ video {
   margin-left: auto;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -847,10 +851,6 @@ video {
 
 .mt-\[-112px\] {
   margin-top: -112px;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .box-border {
@@ -976,8 +976,16 @@ video {
   height: 10px;
 }
 
-.h-\[20px\] {
-  height: 20px;
+.h-\[24px\] {
+  height: 24px;
+}
+
+.h-\[34px\] {
+  height: 34px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-\[44px\] {
@@ -992,52 +1000,24 @@ video {
   height: auto;
 }
 
-.h-\[24px\] {
-  height: 24px;
-}
-
-.h-\[32px\] {
-  height: 32px;
-}
-
-.h-\[34px\] {
-  height: 34px;
-}
-
-.h-\[30px\] {
-  height: 30px;
-}
-
-.h-\[40px\] {
-  height: 40px;
+.h-full {
+  height: 100%;
 }
 
 .min-h-\[200px\] {
   min-height: 200px;
 }
 
-.min-h-\[335px\] {
-  min-height: 335px;
-}
-
 .min-h-\[24px\] {
   min-height: 24px;
 }
 
-.min-h-\[20px\] {
-  min-height: 20px;
-}
-
-.min-h-\[32px\] {
-  min-height: 32px;
+.min-h-\[335px\] {
+  min-height: 335px;
 }
 
 .min-h-\[34px\] {
   min-height: 34px;
-}
-
-.min-h-\[30px\] {
-  min-height: 30px;
 }
 
 .min-h-\[40px\] {
@@ -1048,8 +1028,16 @@ video {
   width: 10px;
 }
 
-.w-\[20px\] {
-  width: 20px;
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[34px\] {
+  width: 34px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[44px\] {
@@ -1076,44 +1064,12 @@ video {
   width: 100%;
 }
 
-.w-\[24px\] {
-  width: 24px;
-}
-
-.w-\[32px\] {
-  width: 32px;
-}
-
-.w-\[34px\] {
-  width: 34px;
-}
-
-.w-\[30px\] {
-  width: 30px;
-}
-
-.w-\[40px\] {
-  width: 40px;
-}
-
 .min-w-\[100\%\] {
   min-width: 100%;
 }
 
-.min-w-\[30px\] {
-  min-width: 30px;
-}
-
 .min-w-\[24px\] {
   min-width: 24px;
-}
-
-.min-w-\[20px\] {
-  min-width: 20px;
-}
-
-.min-w-\[32px\] {
-  min-width: 32px;
 }
 
 .min-w-\[34px\] {
@@ -2331,10 +2287,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pt-\[4px\] {
-  padding-top: 4px;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2389,11 +2341,6 @@ video {
 
 .align-super {
   vertical-align: super;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -2561,9 +2508,9 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity, 1));
 }
 
-.text-slate-600 {
+.text-slate-500 {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-700 {
@@ -2574,11 +2521,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-slate-500 {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2625,6 +2567,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-55 {
+  opacity: 0.55;
 }
 
 .bg-blend-normal {
@@ -2981,6 +2927,100 @@ body {
 
 .circle-image {
   border-radius: 50% !important;
+}
+
+/* Animate */
+
+@keyframes slide-up-scale {
+  from {
+    scale: 0;
+    transform: translateY(-400px);
+  }
+
+  to {
+    scale: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    scale: 0.7;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ping-small {
+  75%,
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-init-header {
+  animation: slide-up-scale 2s;
+}
+
+.animate-init-sub-header {
+  animation: scale-in 3s;
+}
+
+.animate-ping-small {
+  animation: ping-small 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-slide-up-scale {
+    animation: slide-up-scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+
+  .animate-scale-in {
+    animation: scale-in linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
+
+  .animate-fade-in {
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .animate-slide-up-fade-in {
+    animation: slide-up-fade-in linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
 }
 
 @media (min-width: 640px) {
