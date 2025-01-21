@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
@@ -24,14 +26,49 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    container: {
+      // you can configure the container to be centered
+      center: true,
+      screens: {
+        'xxs': '100%',
+        'xs': '100%',
+        sm: '100%',
+        md: '720px',
+        lg: '940px',
+        xl: '1140px',
+        '2xl': '1140px',
+      },
+    },
     flex: {
       '50': '0 0 50%'
     },
     backgroundImage: {
       'hero-image': "url('../img/classmates-friends-bag-school-educationcopy.webp')",
-      'section-2': "url('../img/section-2.webp')",
+      'section-highlight': "url('../img/section-2.webp')",
+      'section-about': "url('../img/class-2.webp')",
+      'programs': "url('../img/programs.webp')"
+    },
+    extend: {
+      textShadow: {
+        sm: '0 1px 1px var(--tw-shadow-color)',
+        DEFAULT: '0 1px 2px var(--tw-shadow-color)',
+        md: '0 4px 3px var(--tw-shadow-color)',
+        lg: '0 4px 10px var(--tw-shadow-color)',
+        xl: '0 8px 13px var(--tw-shadow-color)',
+      },
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }
 

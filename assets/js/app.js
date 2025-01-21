@@ -1,3 +1,17 @@
+// menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mainMenu = document.getElementById('mobile-main-menu');
+
+menuToggle.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (mainMenu.classList.contains('show')) {
+    mainMenu.classList.remove('show');
+  } else {
+    mainMenu.classList.add('show');
+  }
+});
+
+// Carousel
 const carouselItems = document.querySelectorAll('.carousel-item');
 const carouselIndicatorItems = document.querySelectorAll('.carousel-indicator-item');
 const carouselNav = document.querySelectorAll('.carousel-nav span');
@@ -88,6 +102,9 @@ const animateCarousel = () => {
     }
   });
 };
+
+// Accordion
+const faqTitle = document.querySelectorAll('.faq-title');
 
 // Animate JS
 const animationObserver = new IntersectionObserver((entries) => {
