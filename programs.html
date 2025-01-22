@@ -25,7 +25,7 @@
     <meta property="og:site_name" content="bimbabrightkids.com">
     <meta property="og:locale" content="id_ID">
 
-    <title>Bimba BrightKids</title>
+    <title>Bimba BrightKids - Program & Kelas</title>
 
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -54,9 +54,10 @@
       <div class="relative bg-clip-padding bg-white bg-opacity-55 blur-backdrop-filter w-full">
         <div class="flex flex-col xxs:px-4 sm:px-4 md:px-0 lg:px-8 container">
           <div class="xxs:flex flex-row md:hidden">
-            <a title="Menu"
-              aria-label="Menu"
-              class="flex mb-0 px-3 py-4" id="menu-toggle">
+            <a title="Menu" 
+              data-event-name="click_toggle_main_menu" 
+              class="flex mb-0 px-3 py-4 cta"
+              id="menu-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icon-tabler-menu-2 icons-tabler-outline size-8">
@@ -66,32 +67,47 @@
                 <path d="M4 18l16 0" />
               </svg>
             </a>
-            <a href="https://bimbabrightkids.com/" title="Bimba BrightKids" aria-label="Bimba BrightKids">
-              <img src="assets/img/logo-small.webp" alt="Bimba BrightKids" class="flex w-[100px] h-[64px] aspect-auto object-contain">
+            <a href="https://bimbabrightkids.com/" 
+              class="cta" 
+              data-event-name="click_logo_web" 
+              title="Bimba BrightKids"
+              aria-label="Bimba BrightKids">
+              <img src="assets/img/logo-small.webp" alt="Bimba BrightKids"
+                class="flex w-[100px] h-[64px] aspect-auto object-contain">
             </a>
           </div>
-
+          
           <div class="flex flex-row justify-between">
-            <a href="https://bimbabrightkids.com/" title="Bimba BrightKids" aria-label="Bimba BrightKids" class="md:inline-block flex xxs:hidden">
+            <a href="https://bimbabrightkids.com/" 
+              title="Bimba BrightKids" 
+              aria-label="Bimba BrightKids"
+              data-event-name="click_logo_mobile" 
+              class="md:inline-block flex xxs:hidden cta">
               <img src="assets/img/logo-small.webp" alt="Bimba BrightKids" class="w-[150px] h-[80px] aspect-auto object-contain">
             </a>
-
-            <ul class="md:text-right font-medium text-slate-600 xxs:text-left transition duration-200 ease-out" id="mobile-main-menu">
+          
+            <ul class="md:text-right font-medium text-slate-600 xxs:text-left transition duration-200 ease-out"
+              id="mobile-main-menu">
               <li class="xxs:block md:inline-block">
                 <a href="https://bimbabrightkids.com/" 
-                  class="inline-block px-4 xxs:py-2 md:py-7">
+                  title="Beranda"
+                  data-event-name="click_menu_home"
+                  class="inline-block px-4 xxs:py-2 md:py-7 cta">
                   Beranda
                 </a>
               </li>
               <li class="xxs:block md:inline-block">
                 <a href="https://bimbabrightkids.com/programs.html" 
-                  class="inline-block px-4 xxs:py-2 md:py-7">
+                  title="Program & Kelas"
+                  data-event-name="click_menu_program_and_class"
+                  class="inline-block px-4 xxs:py-2 md:py-7 cta">
                   Program &amp; Kelas
                 </a>
               </li>
               <li class="xxs:block md:inline-block xxs:mb-4 md:mb-0">
                 <a href="https://wa.me/628111079796" target="_blank" 
-                  data-event-name="click_contact_us_menu"
+                  title="Kontak Kami"
+                  data-event-name="click_menu_contact_us"
                   class="inline-block xxs:bg-transparent md:bg-green-500 px-4 xxs:py-2 md:py-2 rounded-full xxs:text-slate-600 md:text-white cta">
                   Kontak Kami
                 </a>
