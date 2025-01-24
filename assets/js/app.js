@@ -117,5 +117,19 @@ const animationObserver = new IntersectionObserver((entries) => {
   });
 });
 
-const animateScaleIn = document.querySelectorAll('.animate');
-animateScaleIn.forEach((el) => animationObserver.observe(el));
+const animatedElements = document.querySelectorAll('.animate');
+animatedElements.forEach((el) => animationObserver.observe(el));
+
+// Video
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+});
+
+const videos = document.querySelectorAll('.video');
+videos.forEach((el) => videoObserver.observe(el));
