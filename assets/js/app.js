@@ -48,7 +48,7 @@ const setPrevItem = () => {
   i--;
 };
 
-var carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+var carouselTimer = setInterval(runCarouselAutoSlide, 10000);
 
 // Carousel Nav
 carouselNav.forEach((nav) => {
@@ -68,7 +68,7 @@ carouselNav.forEach((nav) => {
     }
 
     animateCarousel();
-    carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+    carouselTimer = setInterval(runCarouselAutoSlide, 10000);
   });
 });
 
@@ -82,7 +82,7 @@ carouselIndicatorItems.forEach((indicatorItem) => {
     i = index;
 
     animateCarousel();
-    carouselTimer = setInterval(runCarouselAutoSlide, 5000);
+    carouselTimer = setInterval(runCarouselAutoSlide, 10000);
   });
 });
 
