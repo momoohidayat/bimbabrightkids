@@ -46,7 +46,9 @@ module.exports = {
       'hero-image': "url('../img/classmates-friends-bag-school-educationcopy.webp')",
       'section-highlight': "url('../img/section-2.webp')",
       'section-about': "url('../img/class-2.webp')",
-      'programs': "url('../img/programs.webp')"
+      'programs': "url('../img/programs.webp')",
+      'franchise': "url('../img/franchise-bg.webp')",
+      'section-franchise-branch': "url('../img/branch.webp')",
     },
     extend: {
       textShadow: {
