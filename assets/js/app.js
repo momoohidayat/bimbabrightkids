@@ -112,7 +112,7 @@ const animationObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('animate-show');
     } else {
-      entry.target.classList.remove('animate-show');
+      // entry.target.classList.remove('animate-show');
     }
   });
 });
