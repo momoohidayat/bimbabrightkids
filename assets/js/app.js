@@ -109,10 +109,8 @@ const faqTitle = document.querySelectorAll('.faq-title');
 // Animate JS
 const animationObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && !entry.target.classList.contains('animate-show')) {
       entry.target.classList.add('animate-show');
-    } else {
-      // entry.target.classList.remove('animate-show');
     }
   });
 });
